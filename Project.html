@@ -55,11 +55,14 @@
  var weatherReport;
  var lowtemp;
  var interests = [];
+ var voicelist = responsiveVoice.getVoices();
 
  // Adding a click event on Hello World button to say "Hello World"
  $('.sayHello').on('click',() =>{
    if(responsiveVoice.voiceSupport()) {
-    responsiveVoice.speak("hello world")
+    responsiveVoice.speak("hello world, I'm a woman");
+    responsiveVoice.speak("hello world, I'm a man", "UK English Male");
+    voicelist;
     }
   });
         $('.emotion').hide()
